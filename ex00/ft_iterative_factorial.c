@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 12:43:00 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 12:58:24 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/13 12:59:16 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,6 @@ int		ft_iterative_factorial(int nb)
 	if (nb < 0)
 	{
 		return (0);
-	}
-	else if (nb == 0)
-	{
-		return (1);
 	}
 	while (nb > 0)
 	{
