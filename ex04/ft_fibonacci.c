@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_iterative_power.c                               :+:    :+:            */
+/*   ft_fibonacci.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/09/13 13:06:49 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 13:23:23 by averheij      ########   odam.nl         */
+/*   Created: 2019/09/13 13:23:44 by averheij       #+#    #+#                */
+/*   Updated: 2019/09/13 13:46:21 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,31 @@
 #include <stdio.h>
 
 /*fstart */
-int		ft_iterative_power(int nb, int power)
+int	 ft_fibonacci(int index)
 {
-	int total;
-
-	if(power < 0)
+	if (index < 0)
+	{
+		return (-1);
+	}
+	else if (index == 0)
 	{
 		return (0);
 	}
-	total = 1;
-	while (power > 0)
+	else if (index == 1)
 	{
-		total = total * nb;
-		power = power - 1;
+		return (1);
 	}
-	return (total);
+	else
+	{
+		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	}
 }
 /*fend */
 
-int		main(void)
+int	 main(void)
 {
 	int number;
-	int power;
-	number = 4;
-	power = 2;
+	number = 8;
 	printf("%d\n", number);
-	printf("%d\n", power);
-	printf("%d\n", ft_iterative_power(number, power));
+	printf("%d\n", ft_fibonacci(number));
 }
