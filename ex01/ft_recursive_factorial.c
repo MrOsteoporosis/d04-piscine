@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 13:00:41 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 13:23:30 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/13 14:17:29 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 
 /*fstart */
-int	 ft_recursive_factorial(int nb)
+int		ft_recursive_factorial(int nb)
 {
 	if (nb < 0)
 	{
@@ -31,9 +31,10 @@ int	 ft_recursive_factorial(int nb)
 }
 /*fend */
 
-int	 main(void)
+int		main(void)
 {
 	int number;
+
 	number = 8;
 	printf("%d\n", number);
 	printf("%d\n", ft_recursive_factorial(number));

@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 13:23:44 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 13:46:21 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/13 14:18:17 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdio.h>
 
 /*fstart */
-int	 ft_fibonacci(int index)
+int		ft_fibonacci(int index)
 {
 	if (index < 0)
 	{
@@ -36,9 +36,10 @@ int	 ft_fibonacci(int index)
 }
 /*fend */
 
-int	 main(void)
+int		main(void)
 {
 	int number;
+
 	number = 8;
 	printf("%d\n", number);
 	printf("%d\n", ft_fibonacci(number));

@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 13:13:17 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 13:21:32 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/13 14:17:49 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 #include <stdio.h>
 
 /*fstart */
-int	 ft_recursive_power(int nb, int power)
+int		ft_recursive_power(int nb, int power)
 {
-    if(power < 0)
-    {
-        return (0);
-    }
+	if (power < 0)
+	{
+		return (0);
+	}
 	if (power > 1)
 	{
 		return (nb * ft_recursive_power(nb, power - 1));
@@ -32,10 +32,11 @@ int	 ft_recursive_power(int nb, int power)
 }
 /*fend */
 
-int	 main(void)
+int		main(void)
 {
 	int number;
 	int power;
+
 	number = 12;
 	power = 4;
 	printf("%d\n", number);

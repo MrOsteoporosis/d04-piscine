@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 13:06:49 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 13:23:23 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/13 14:17:14 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_iterative_power(int nb, int power)
 {
 	int total;
 
-	if(power < 0)
+	if (power < 0)
 	{
 		return (0);
 	}
@@ -37,6 +37,7 @@ int		main(void)
 {
 	int number;
 	int power;
+
 	number = 4;
 	power = 2;
 	printf("%d\n", number);
