@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 12:43:00 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 14:16:51 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/14 13:14:11 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_iterative_factorial(int nb)
 	int total;
 
 	total = 1;
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 	{
 		return (0);
 	}
@@ -36,7 +36,7 @@ int		main(void)
 {
 	int number;
 
-	number = 1234567890;
+	number = 0;
 	printf("%d\n", number);
 	printf("%d\n", ft_iterative_factorial(number));
 }
