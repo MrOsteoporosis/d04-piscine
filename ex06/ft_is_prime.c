@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/14 11:11:46 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/14 11:17:25 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/14 11:18:52 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		ft_is_prime(int nb)
 	}
 	return (1);
 }
+/*fend */
 
 int		main(void)
 {
