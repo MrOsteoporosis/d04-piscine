@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/13 13:00:41 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 14:17:29 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/14 13:15:53 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 /*fstart */
 int		ft_recursive_factorial(int nb)
 {
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 	{
 		return (0);
 	}
 	if (nb > 0)
 	{
-		return (nb * ft_recursive_factorial(nb-1));
+		return (nb * ft_recursive_factorial(nb - 1));
 	}
 	else
 	{
